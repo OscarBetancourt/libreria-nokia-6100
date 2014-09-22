@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1305076345 source:c:\users\acer\desktop\micro\programas_codeblocks\usart_rs232\libreria_usart.c
+	<avr/io.h>
+	<util/delay.h>
+	<avr/interrupt.h>
+	"libreria_usart.h"
+	"libreria_i2c.h"
+	"Libreria_Nokia.h"
+
+1305723235 c:\users\acer\desktop\micro\programas_codeblocks\usart_rs232\libreria_usart.h
+	"libreria_usart.h"
+
+1305558365 c:\users\acer\desktop\micro\programas_codeblocks\usart_rs232\libreria_i2c.h
+	"libreria_i2c.h"
+
+1305388935 source:c:\users\acer\desktop\micro\programas_codeblocks\usart_rs232\libreria_i2c.c
+	<avr/io.h>
+	<util/delay.h>
+	<avr/interrupt.h>
+	<util/twi.h>
+	"libreria_usart.h"
+	"libreria_i2c.h"
+	"Libreria_Nokia.h"
+
+1305082443 source:c:\users\acer\desktop\micro\programas_codeblocks\usart_rs232\main.c
+	<avr/io.h>
+	<util/delay.h>
+	<avr/interrupt.h>
+	"libreria_usart.h"
+	"libreria_i2c.h"
+	"Libreria_Nokia.h"
+
+1305470809 c:\users\acer\desktop\micro\programas_codeblocks\usart_rs232\libreria_nokia.h
+	"mi_libreria_lcd.h"
+
+1305470809 source:c:\users\acer\desktop\micro\programas_codeblocks\usart_rs232\libreria_nokia.c
+	<avr/io.h>
+	<util/delay.h>
+	<avr/interrupt.h>
+	"libreria_usart.h"
+	"libreria_i2c.h"
+	"Libreria_Nokia.h"
+

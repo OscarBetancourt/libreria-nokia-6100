@@ -1,0 +1,147 @@
+\hypertarget{libreria__i2c_8h}{
+\section{Referencia del Archivo C:/Users/ACER/Desktop/micro/programas\_\-codeblocks/usart\_\-rs232/libreria\_\-i2c.h}
+\label{libreria__i2c_8h}\index{C:/Users/ACER/Desktop/micro/programas\_\-codeblocks/usart\_\-rs232/libreria\_\-i2c.h@{C:/Users/ACER/Desktop/micro/programas\_\-codeblocks/usart\_\-rs232/libreria\_\-i2c.h}}
+}
+
+
+Librer�as para el manejo del I2c Atmega16.  
+
+
+\subsection*{'defines'}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{libreria__i2c_8h_adc349e279002bf7567a3bb2a88fc5187}{
+\#define {\bfseries FRE\_\-TWBR}~TWBR=4}
+\label{libreria__i2c_8h_adc349e279002bf7567a3bb2a88fc5187}
+
+\item 
+\hypertarget{libreria__i2c_8h_a50243a86abcb4880e93206763b23ec3c}{
+\#define {\bfseries PRE\_\-TWP}~TWSR=(0$<$$<$TWPS0)}
+\label{libreria__i2c_8h_a50243a86abcb4880e93206763b23ec3c}
+
+\item 
+\#define \hyperlink{libreria__i2c_8h_adc9778a65139ec9bfb5572c1f6038cf5}{DIR\_\-WR}~0xA0
+\item 
+\#define \hyperlink{libreria__i2c_8h_aaf44994cc6dfe277ea2b9e8b912fb910}{DIR\_\-RD}~0xA1
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{libreria__i2c_8h_a0955808b6b1b0e55b18fc3f2bcc1bcdf}{WR\_\-EEPROM} (uint8\_\-t dat)
+\begin{DoxyCompactList}\small\item\em funcion que espera que el esclavo halla recivido el dato o dirrecion \item\end{DoxyCompactList}\item 
+void \hyperlink{libreria__i2c_8h_ad5d689442a8f5b3f192839516ec5c3ab}{Mad\_\-EEPROM} (uint8\_\-t dat)
+\begin{DoxyCompactList}\small\item\em funcion que manda la dirrecion y el dato para escribir \item\end{DoxyCompactList}\item 
+uint8\_\-t \hyperlink{libreria__i2c_8h_ab55a54575a5106d1c1773fffb86ff259}{Read\_\-EEPROM} (void)
+\item 
+void \hyperlink{libreria__i2c_8h_a0a44d261bb26565e8dcf64ce186e5b37}{leer\_\-EEPROM} (void)
+\begin{DoxyCompactList}\small\item\em funcion que indica cual dato quiere ser leido \item\end{DoxyCompactList}\item 
+void \hyperlink{libreria__i2c_8h_ab5f7273b7707ce4d1e0ab286358394ad}{I2c\_\-start} (void)
+\begin{DoxyCompactList}\small\item\em funcion que habilitad el i2c del Atmega16 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Librer�as para el manejo del I2c Atmega16. \begin{DoxyAuthor}{Autor}
+Oscar Arley Betancourt-\/Juan Carlos Gerena-\/Jairo Perez. 
+\end{DoxyAuthor}
+
+
+\subsection{Documentación de los 'defines'}
+\hypertarget{libreria__i2c_8h_aaf44994cc6dfe277ea2b9e8b912fb910}{
+\index{libreria\_\-i2c.h@{libreria\_\-i2c.h}!DIR\_\-RD@{DIR\_\-RD}}
+\index{DIR\_\-RD@{DIR\_\-RD}!libreria_i2c.h@{libreria\_\-i2c.h}}
+\subsubsection[{DIR\_\-RD}]{\setlength{\rightskip}{0pt plus 5cm}\#define DIR\_\-RD~0xA1}}
+\label{libreria__i2c_8h_aaf44994cc6dfe277ea2b9e8b912fb910}
+Se define la dirrecion del esclaco para leer \hypertarget{libreria__i2c_8h_adc9778a65139ec9bfb5572c1f6038cf5}{
+\index{libreria\_\-i2c.h@{libreria\_\-i2c.h}!DIR\_\-WR@{DIR\_\-WR}}
+\index{DIR\_\-WR@{DIR\_\-WR}!libreria_i2c.h@{libreria\_\-i2c.h}}
+\subsubsection[{DIR\_\-WR}]{\setlength{\rightskip}{0pt plus 5cm}\#define DIR\_\-WR~0xA0}}
+\label{libreria__i2c_8h_adc9778a65139ec9bfb5572c1f6038cf5}
+Se define la dirrecion del esclavo para escribir 
+
+\subsection{Documentación de las funciones}
+\hypertarget{libreria__i2c_8h_ab5f7273b7707ce4d1e0ab286358394ad}{
+\index{libreria\_\-i2c.h@{libreria\_\-i2c.h}!I2c\_\-start@{I2c\_\-start}}
+\index{I2c\_\-start@{I2c\_\-start}!libreria_i2c.h@{libreria\_\-i2c.h}}
+\subsubsection[{I2c\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}void I2c\_\-start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{libreria__i2c_8h_ab5f7273b7707ce4d1e0ab286358394ad}
+
+
+funcion que habilitad el i2c del Atmega16 
+
+\begin{DoxyReturn}{Devuelve}
+No retorna nada 
+\end{DoxyReturn}
+\hypertarget{libreria__i2c_8h_a0a44d261bb26565e8dcf64ce186e5b37}{
+\index{libreria\_\-i2c.h@{libreria\_\-i2c.h}!leer\_\-EEPROM@{leer\_\-EEPROM}}
+\index{leer\_\-EEPROM@{leer\_\-EEPROM}!libreria_i2c.h@{libreria\_\-i2c.h}}
+\subsubsection[{leer\_\-EEPROM}]{\setlength{\rightskip}{0pt plus 5cm}void leer\_\-EEPROM (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{libreria__i2c_8h_a0a44d261bb26565e8dcf64ce186e5b37}
+
+
+funcion que indica cual dato quiere ser leido 
+
+\begin{DoxyReturn}{Devuelve}
+No retorna nada 
+\end{DoxyReturn}
+\hypertarget{libreria__i2c_8h_ad5d689442a8f5b3f192839516ec5c3ab}{
+\index{libreria\_\-i2c.h@{libreria\_\-i2c.h}!Mad\_\-EEPROM@{Mad\_\-EEPROM}}
+\index{Mad\_\-EEPROM@{Mad\_\-EEPROM}!libreria_i2c.h@{libreria\_\-i2c.h}}
+\subsubsection[{Mad\_\-EEPROM}]{\setlength{\rightskip}{0pt plus 5cm}void Mad\_\-EEPROM (
+\begin{DoxyParamCaption}
+\item[{uint8\_\-t}]{dat}
+\end{DoxyParamCaption}
+)}}
+\label{libreria__i2c_8h_ad5d689442a8f5b3f192839516ec5c3ab}
+
+
+funcion que manda la dirrecion y el dato para escribir 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em uint8\_\-t} & dato entero que indica la dirrecion o dato a enviar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No retorna nada 
+\end{DoxyReturn}
+\hypertarget{libreria__i2c_8h_ab55a54575a5106d1c1773fffb86ff259}{
+\index{libreria\_\-i2c.h@{libreria\_\-i2c.h}!Read\_\-EEPROM@{Read\_\-EEPROM}}
+\index{Read\_\-EEPROM@{Read\_\-EEPROM}!libreria_i2c.h@{libreria\_\-i2c.h}}
+\subsubsection[{Read\_\-EEPROM}]{\setlength{\rightskip}{0pt plus 5cm}uint8\_\-t Read\_\-EEPROM (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}
+\label{libreria__i2c_8h_ab55a54575a5106d1c1773fffb86ff259}
+\begin{DoxyReturn}{Devuelve}
+un uint8\_\-t que indica el dato qu quiere ser leido 
+\end{DoxyReturn}
+\hypertarget{libreria__i2c_8h_a0955808b6b1b0e55b18fc3f2bcc1bcdf}{
+\index{libreria\_\-i2c.h@{libreria\_\-i2c.h}!WR\_\-EEPROM@{WR\_\-EEPROM}}
+\index{WR\_\-EEPROM@{WR\_\-EEPROM}!libreria_i2c.h@{libreria\_\-i2c.h}}
+\subsubsection[{WR\_\-EEPROM}]{\setlength{\rightskip}{0pt plus 5cm}void WR\_\-EEPROM (
+\begin{DoxyParamCaption}
+\item[{uint8\_\-t}]{dat}
+\end{DoxyParamCaption}
+)}}
+\label{libreria__i2c_8h_a0955808b6b1b0e55b18fc3f2bcc1bcdf}
+
+
+funcion que espera que el esclavo halla recivido el dato o dirrecion 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em uint8\_\-t} & dato entero sin signo que indica el dato a escribir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+No retorna nada 
+\end{DoxyReturn}
